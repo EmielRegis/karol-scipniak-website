@@ -1,0 +1,257 @@
+@import url('http://fonts.googleapis.com/css?family=PT Sans Caption')
+@import url('http://fonts.googleapis.com/css?family=Inder')
+@import url('http://fonts.googleapis.com/css?family=Alegreya+Sans+SC')
+
+
+
+
+$orange-theme-color: #F7A311
+$blue-theme-color: #428bca
+$red-theme-color: #ED422F
+
+$highlight-theme-color: $red-theme-color
+
+$black-theme-color: black
+$dark-theme-color: #111111
+$white-theme-color: #ffffff
+$white-theme-color-a: rgba(255, 255, 255, 0.7)
+
+
+
+body
+  width: 100%
+  height: 100%
+  font-family: "PT Sans Caption"
+  //font-family: "Inder"
+  font-weight: 300
+  background-color: $white-theme-color
+  -webkit-overflow-scrolling: touch
+  overflow-x: hidden
+
+html
+  width: 100%
+  height: 100%
+
+
+.top-buffer
+  margin-top: 30px
+
+p .upper
+  text-transform: uppercase
+  font-weight: 400
+
+
+.btn
+  text-transform: uppercase
+  font-weight: 400
+  -webkit-border-radius: 0
+  -moz-border-radius: 0
+  border-radius: 0
+  -webkit-transition: all .3s ease-in-out
+  -moz-transition: all .3s ease-in-out
+  transition: all .3s ease-in-out
+
+.btn-default
+  margin-left: 10px
+  margin-right: 10px
+  border: 1px solid $dark-theme-color
+  color: $dark-theme-color
+  background-color: transparent
+  -webkit-border-radius: 0
+  -moz-border-radius: 0
+  border-radius: 0
+  &:hover, &:focus
+    border: 1px solid $dark-theme-color
+    outline: 0
+    color: $white-theme-color
+    background-color: $dark-theme-color
+.btn-lg
+  -webkit-border-radius: 0
+  -moz-border-radius: 0
+  border-radius: 0
+
+
+.navbar-default
+  //color:#232323;
+  color: $white-theme-color
+  border-radius: 0
+  border-bottom: 0
+  background-color: $white-theme-color
+  text-transform: uppercase
+  letter-spacing: 1px
+
+  .navbar-nav > li > a
+    color: $dark-theme-color
+    &:hover, &:focus
+      color: $highlight-theme-color
+
+
+  .navbar-nav > li.active > a
+    background: inherit
+    color: $highlight-theme-color
+    &:hover, &:focus
+      background: inherit
+      color: $highlight-theme-color
+
+  .navbar-brand
+    color: $dark-theme-color
+    &:hover, &:focus, .selected
+      color: $highlight-theme-color
+
+
+@media (min-width: 767px)
+  .navbar-default
+    padding: 20px 0
+    border-bottom: 0
+    background: 0 0
+    //color: #232323
+    -webkit-transition: background .3s ease-in-out, padding .3s ease-in-out
+    -moz-transition: background .3s ease-in-out, padding .3s ease-in-out
+    transition: background .3s ease-in-out, padding .3s ease-in-out
+    .navbar-nav > li > a, .navbar-brand
+      color: $white-theme-color
+  .nav-lower
+    background-color: $white-theme-color
+    -webkit-transition: background-color .6s ease-in-out
+    -moz-transition: background-color .6s ease-in-out
+    transition: background-color .6s ease-in-out
+    .navbar-nav > li > a, .navbar-brand
+      color: $dark-theme-color
+      -webkit-transition: color .6s ease-in-out
+      -moz-transition: color .6s ease-in-out
+      transition: color .6s ease-in-out
+
+
+.intro
+  display: table
+  width: 100%
+  height: auto
+  padding: 100px 0
+  text-align: center
+  color: $white-theme-color-a
+  background: $black-theme-color url(../images/strat_headstock.jpg) no-repeat scroll center center
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  background-size: cover
+  -o-background-size: cover
+  span
+    background-color: rgba(0,0,0, 0.25)
+
+
+
+.sect
+  color: $white-theme-color
+  padding-top: 100px
+  padding-bottom: 100px
+  font-size: 16px
+
+.intro-body
+  display: table-cell
+  vertical-align: middle
+
+.brand-heading
+  font-size: 48px
+  font-weight: 600
+  letter-spacing: -0.05em
+  color: $white-theme-color
+
+.intro-text
+  font-size: 18px
+  font-weight: 100
+  text-align: center
+
+@media (min-width: 767px)
+  .intro
+    height: 100%
+    padding: 0
+  .brand-heading
+    font-size: 48px
+  .intro-text
+    font-size: 18px
+
+.about
+  background-color: $white-theme-color
+  color: $dark-theme-color
+  h1
+    font-size: 40px
+
+.music
+  //background-color: $dark-theme-color
+  background: $black-theme-color url(../images/marshall_211.jpg) no-repeat scroll center center
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  background-size: cover
+  -o-background-size: cover
+  h1
+    font-size: 40px
+  .btn-default
+    border: 1px solid $white-theme-color
+    color: $white-theme-color
+    &:hover, &:focus
+      border: 1px solid $white-theme-color
+      color: $dark-theme-color
+      background-color: $white-theme-color
+
+
+.programming
+  background-color: $highlight-theme-color
+  h1
+    font-size: 40px
+  .btn-default
+    border: 1px solid $white-theme-color
+    color: $white-theme-color
+    &:hover, &:focus
+      border: 1px solid $white-theme-color
+      color: $red-theme-color
+      background-color: $white-theme-color
+
+.contact
+  background-color: $white-theme-color
+  h1
+    font-size: 40px
+  padding-bottom: 200px
+  color: $dark-theme-color
+
+footer
+  p
+    color: $dark-theme-color
+    text-transform: uppercase
+    font-weight: 700
+    letter-spacing: 1px
+    margin-top: 20px
+    margin-bottom: 20px
+
+.upper
+  text-transform: uppercase
+  font-weight: 500
+
+.img-circle
+  margin-bottom: 20px
+
+.page-scroll
+  -webkit-transition-property: -webkit-transform
+  -webkit-transition-duration: 1s
+  -moz-transition-property: -moz-transform
+  -moz-transition-duration: 1s
+  &:hover
+    -webkit-animation-name: pulse
+    -moz-animation-name: pulse
+    -webkit-animation-duration: 1.5s
+    -moz-animation-duration: 1.5s
+    -webkit-animation-iteration-count: infinite
+    -moz-animation-iteration-count: infinite
+    -webkit-animation-timing-function: linear
+    -moz-animation-timing-function: linear
+
+\::selection
+  background: rgba(0, 0, 0, 0.1)
+
+\::-moz-selection
+  background: rgba(0, 0, 0, 0.1)
+
+img
+  &::selection, &::-moz-selection
+    background: transparent
+
+.code-font
+  font-size: 80px

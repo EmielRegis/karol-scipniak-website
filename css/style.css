@@ -1,0 +1,224 @@
+@import url("http://fonts.googleapis.com/css?family=PT Sans Caption");
+@import url("http://fonts.googleapis.com/css?family=Inder");
+@import url("http://fonts.googleapis.com/css?family=Alegreya+Sans+SC");
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "PT Sans Caption";
+  font-weight: 300;
+  background-color: white;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden; }
+
+html {
+  width: 100%;
+  height: 100%; }
+
+.top-buffer {
+  margin-top: 30px; }
+
+p .upper {
+  text-transform: uppercase;
+  font-weight: 400; }
+
+.btn {
+  text-transform: uppercase;
+  font-weight: 400;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+.btn-default {
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 1px solid #111111;
+  color: #111111;
+  background-color: transparent;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0; }
+  .btn-default:hover, .btn-default:focus {
+    border: 1px solid #111111;
+    outline: 0;
+    color: white;
+    background-color: #111111; }
+
+.btn-lg {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0; }
+
+.navbar-default {
+  color: white;
+  border-radius: 0;
+  border-bottom: 0;
+  background-color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+  .navbar-default .navbar-nav > li > a {
+    color: #111111; }
+    .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+      color: #ed422f; }
+  .navbar-default .navbar-nav > li.active > a {
+    background: inherit;
+    color: #ed422f; }
+    .navbar-default .navbar-nav > li.active > a:hover, .navbar-default .navbar-nav > li.active > a:focus {
+      background: inherit;
+      color: #ed422f; }
+  .navbar-default .navbar-brand {
+    color: #111111; }
+    .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand .selected {
+      color: #ed422f; }
+
+@media (min-width: 767px) {
+  .navbar-default {
+    padding: 20px 0;
+    border-bottom: 0;
+    background: 0 0;
+    -webkit-transition: background 0.3s ease-in-out, padding 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out, padding 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out, padding 0.3s ease-in-out; }
+    .navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand {
+      color: white; }
+
+  .nav-lower {
+    background-color: white;
+    -webkit-transition: background-color 0.6s ease-in-out;
+    -moz-transition: background-color 0.6s ease-in-out;
+    transition: background-color 0.6s ease-in-out; }
+    .nav-lower .navbar-nav > li > a, .nav-lower .navbar-brand {
+      color: #111111;
+      -webkit-transition: color 0.6s ease-in-out;
+      -moz-transition: color 0.6s ease-in-out;
+      transition: color 0.6s ease-in-out; } }
+.intro {
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  background: black url(../images/strat_headstock.jpg) no-repeat scroll center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
+  .intro span {
+    background-color: rgba(0, 0, 0, 0.25); }
+
+.sect {
+  color: white;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  font-size: 16px; }
+
+.intro-body {
+  display: table-cell;
+  vertical-align: middle; }
+
+.brand-heading {
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: -0.05em;
+  color: white; }
+
+.intro-text {
+  font-size: 18px;
+  font-weight: 100;
+  text-align: center; }
+
+@media (min-width: 767px) {
+  .intro {
+    height: 100%;
+    padding: 0; }
+
+  .brand-heading {
+    font-size: 48px; }
+
+  .intro-text {
+    font-size: 18px; } }
+.about {
+  background-color: white;
+  color: #111111; }
+  .about h1 {
+    font-size: 40px; }
+
+.music {
+  background: black url(../images/marshall_211.jpg) no-repeat scroll center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
+  .music h1 {
+    font-size: 40px; }
+  .music .btn-default {
+    border: 1px solid white;
+    color: white; }
+    .music .btn-default:hover, .music .btn-default:focus {
+      border: 1px solid white;
+      color: #111111;
+      background-color: white; }
+
+.programming {
+  background-color: #ed422f; }
+  .programming h1 {
+    font-size: 40px; }
+  .programming .btn-default {
+    border: 1px solid white;
+    color: white; }
+    .programming .btn-default:hover, .programming .btn-default:focus {
+      border: 1px solid white;
+      color: #ed422f;
+      background-color: white; }
+
+.contact {
+  background-color: white;
+  padding-bottom: 200px;
+  color: #111111; }
+  .contact h1 {
+    font-size: 40px; }
+
+footer p {
+  color: #111111;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.upper {
+  text-transform: uppercase;
+  font-weight: 500; }
+
+.img-circle {
+  margin-bottom: 20px; }
+
+.page-scroll {
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-duration: 1s;
+  -moz-transition-property: -moz-transform;
+  -moz-transition-duration: 1s; }
+  .page-scroll:hover {
+    -webkit-animation-name: pulse;
+    -moz-animation-name: pulse;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear; }
+
+::selection {
+  background: rgba(0, 0, 0, 0.1); }
+
+::-moz-selection {
+  background: rgba(0, 0, 0, 0.1); }
+
+img::selection, img::-moz-selection {
+  background: transparent; }
+
+.code-font {
+  font-size: 80px; }
