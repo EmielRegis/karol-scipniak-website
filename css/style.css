@@ -72,6 +72,18 @@ p .upper {
     color: #111111; }
     .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand .selected {
       color: #ed422f; }
+  .navbar-default .navbar-toggle {
+    background-color: white;
+    border-radius: 0;
+    border: none; }
+    .navbar-default .navbar-toggle .icon-bar {
+      background-color: #111111; }
+    .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+      background-color: white;
+      border-radius: 0;
+      border: none; }
+      .navbar-default .navbar-toggle:hover .icon-bar, .navbar-default .navbar-toggle:focus .icon-bar {
+        background-color: #ed422f; }
 
 @media (min-width: 767px) {
   .navbar-default {
